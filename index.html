@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="navig">
+            <button>All</button>
+            <button>First</button>
+            <button>Second</button>
+            <button onclick="openCartModal()">Корзина</button>
+            <button id="gistogramButton" onclick="window.location.href='Graphic.html'">Гістограми</button>
+        </div>
+    </div>
+    <div id="advertisement">
+        <div class="modal-content">
+            <h2 style="color:white">Реклама</h2>
+            <p style="color:white">Контент</p>
+            <button class="dismiss-button" onclick="closeAdvertisement()">Закрити</button>
+        </div>
+    </div>
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <h2>Корзина</h2>
+            <div id="cartContent"></div>
+            <div id="totalPrice" style="color:white;"></div>
+            <button  class="close" onclick="closeCartModal()" onclick="clearCart()" style=" cursor: pointer;">Видалити все та закрити</button>
+        </div>
+    </div>
+
+    <div id="cardsContainer">
+    </div>
+    <script src='Cart.js'></script>
+    <script src='Reclama.js'></script>
+    <script src='Category.js'></script>
+</body>
+</html>
